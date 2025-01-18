@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the trained model
-model_path = "C:/Users/kashv/Downloads/VIT Downloads/Project/FER2013_TRAINED_MODEL"
+model_path = "./FER2013_TRAINED_MODEL"
 model = load_model(model_path)
 
 # Define categories (same as used during training)
@@ -25,7 +25,7 @@ def predict_emotion(image_path, model, categories, img_size):
     return predicted_class, confidence
 
 # Example usage: predict emotion for a single image
-image_path = "C:/Users/kashv/Downloads/VIT Downloads/Project/image1.jpg"  # Provide the path to your image
+image_path = "./image1.jpg"  # Provide the path to your image
 predicted_class, confidence = predict_emotion(image_path, model, CATEGORIES, IMG_SIZE)
 
 print(f"Predicted emotion: {predicted_class}")
