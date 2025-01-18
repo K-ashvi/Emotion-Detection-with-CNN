@@ -16,8 +16,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
 # Define paths
-TRAIN_DIR = r"C:/Users/kashv/Downloads/fer2013/train"
-TEST_DIR = r"C:/Users/kashv/Downloads/fer2013/test"
+TRAIN_DIR = "./fer2013/train"
+TEST_DIR = "./fer2013/test"
 IMG_SIZE = (48, 48)
 
 # Define categories
